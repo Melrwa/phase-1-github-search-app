@@ -1,13 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+}
+
 #main {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+#github-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
 
 #github-container {
-  display: flex;
+  margin-top: 20px;
 }
 
-ul {
-  list-style: none;
+#user-list, #repos-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#user-list li, #repos-list li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  border-radius: 4px;
+  background: #f9f9f9;
+  transition: background 0.3s;
+}
+
+#user-list li:hover, #repos-list li:hover {
+  background: #f1f1f1;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
